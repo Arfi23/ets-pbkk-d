@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Doctor;
+use App\Models\Patient;
 use Illuminate\Http\Request;
 use App\Models\Record;
 
@@ -16,7 +18,9 @@ class RecordController extends Controller
     // addview == create
     public function addview()
     {
-        return view('records.addview');
+        $patientid = Patient::all();
+        $doctorid = Doctor::all();
+        return view('records.addview', compact('patientid', 'doctorid'));
     }
 
     // add == store
