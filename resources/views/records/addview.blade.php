@@ -22,7 +22,7 @@
                     <select type="text" class="form-control" id="patient_id" name="patient_id">
                         <option value="">- Pasien -</option>
                         @foreach ($patientid as $patientopt)
-                        <option value="{{$patientopt->id}}">{{$patientopt->nama}}</option> <!-- looping mengambil nilai dari tabel types bagian field type -->
+                        <option value="{{$patientopt->id}}">{{$patientopt->nama}}</option> <!-- looping mengambil nilai dari tabel patients bagian field nama -->
                         @endforeach
                     </select>
                 </div>
@@ -31,7 +31,7 @@
                     <select type="text" class="form-control" id="doctor_id" name="doctor_id">
                         <option value="">- Dokter -</option>
                         @foreach ($doctorid as $doctoropt)
-                        <option value="{{$doctoropt->id}}">{{$doctoropt->nama}}</option> <!-- looping mengambil nilai dari tabel conditions bagian field condition -->
+                        <option value="{{$doctoropt->id}}">{{$doctoropt->nama}}</option> <!-- looping mengambil nilai dari tabel doctors bagian field nama -->
                         @endforeach
                     </select>
                 </div>
