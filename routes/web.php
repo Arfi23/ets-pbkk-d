@@ -24,3 +24,6 @@ Route::get('/record', [RecordController::class, 'index'])->name('record.index');
 
 // Route untuk menampilkan halaman form menambahkan data rekaman ke database
 Route::get('/record/add', [RecordController::class, 'addview'])->name('record.addview');
+
+// Route untuk menambahkan data rekaman ke database ketika klik submit rekaman
+Route::post('/record', [RecordController::class, 'add'])->name('record.add');
