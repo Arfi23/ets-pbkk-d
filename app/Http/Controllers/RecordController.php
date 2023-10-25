@@ -12,4 +12,10 @@ class RecordController extends Controller
         $records = Record::all();
         return view('records.index', ['records' => $records]);
     }
+
+    // addview == create
+    public function addview()
+    {
+        return view('records.addview');
+    }
 }
