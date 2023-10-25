@@ -12,7 +12,7 @@
 
 <body>
     <h2 class="text-center mt-5 mb-3">Tambah Rekam Medis</h2>
-    <form method="post" action="">
+    <form method="post" action="{{route('record.add')}}">
         @csrf
         @method('post')
         <div class="row justify-content-center">
