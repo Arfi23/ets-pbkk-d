@@ -16,7 +16,7 @@ return new class extends Migration
             $table->bigInteger('patient_id')->unsigned();
             $table->bigInteger('doctor_id')->unsigned();
             $table->text('health_cond');
-            $table->double('temperature', 3, 2);
+            $table->double('temperature', 3, 1);
             $table->timestamps();
         });
 
