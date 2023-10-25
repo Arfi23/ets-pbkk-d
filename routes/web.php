@@ -21,3 +21,6 @@ Route::get('/', function () {
 
 // Route untuk menampilkan halaman index berisi semua catatan rekaman medis
 Route::get('/record', [RecordController::class, 'index'])->name('record.index');
+
+// Route untuk menampilkan halaman form menambahkan data rekaman ke database
+Route::get('/record/add', [RecordController::class, 'addview'])->name('record.addview');
