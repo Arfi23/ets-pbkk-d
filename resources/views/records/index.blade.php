@@ -12,6 +12,13 @@
 
 <body>
     <h1>Rekam Medis</h1>
+    @if(session()->has('success'))
+    <script>
+        window.onload = function() {
+            alert("Berhasil menyimpan rekam medis");
+        };
+    </script>
+    @endif
     <div>
         <table class="table table-bordered mx-auto align-middle">
             <thead class="table-dark">
