@@ -13,18 +13,26 @@
 <body>
     <h2 class="text-center mt-5 mb-3">Tambah Rekam Medis</h2>
     <form method="post" action="">
+        @csrf
+        @method('post')
         <div class="row justify-content-center">
             <div class="col-md-4">
                 <div class="mb-2">
                     <label for="patient-name" class="form-label">Pasien</label>
                     <select type="text" class="form-control" id="patient_id" name="patient_id">
                         <option value="">- Pasien -</option>
+                        @foreach ($patientid as $patientopt)
+                        <option value="{{$patientopt->id}}">{{$patientopt->nama}}</option> <!-- looping mengambil nilai dari tabel types bagian field type -->
+                        @endforeach
                     </select>
                 </div>
                 <div class="mb-2">
                     <label for="doctor-name" class="form-label">Dokter</label>
                     <select type="text" class="form-control" id="doctor_id" name="doctor_id">
                         <option value="">- Dokter -</option>
+                        @foreach ($doctorid as $doctoropt)
+                        <option value="{{$doctoropt->id}}">{{$doctoropt->nama}}</option> <!-- looping mengambil nilai dari tabel conditions bagian field condition -->
+                        @endforeach
                     </select>
                 </div>
                 <div class="mb-3">
@@ -35,6 +43,11 @@
                     <label for="temperature" class="form-label">Suhu Tubuh</label>
                     <input type="number" class="form-control" id="temperature" name="temperature">
                 </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-1">
+            <div class="col-md-4 d-grid gap-2">
+                <button type="submit" class="btn btn-primary btn-lg">Tambah Rekam</button>
             </div>
         </div>
     </form>
