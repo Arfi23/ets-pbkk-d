@@ -1,6 +1,8 @@
 <?php
 
+use App\Models\Record;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RecordController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Route untuk menampilkan halaman index berisi semua catatan rekaman medis
+Route::get('/record', [RecordController::class, 'index'])->name('record.index');
