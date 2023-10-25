@@ -17,14 +17,14 @@ class Record extends Model
         'temperature',
     ];
 
-    // fungsi patientfunc ini dipakai pada records/index.blade.php untuk menampilkan field nama (pasien) dari tabel patients
-    public function patientfunc(): BelongsTo
+    // fungsi patient ini dipakai pada records/index.blade.php untuk menampilkan field nama (pasien) dari tabel patients
+    public function patient(): BelongsTo
     {
         return $this->belongsTo(Patient::class);
     }
 
-    // fungsi doctorfunc ini dipakai pada records/index.blade.php untuk menampilkan field nama (dokter) dari tabel doctors
-    public function doctorfunc(): BelongsTo
+    // fungsi doctor ini dipakai pada records/index.blade.php untuk menampilkan field nama (dokter) dari tabel doctors
+    public function doctor(): BelongsTo
     {
         return $this->belongsTo(Doctor::class);
     }
