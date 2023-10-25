@@ -18,7 +18,7 @@
         <div class="row justify-content-center">
             <div class="col-md-4">
                 <div class="mb-2">
-                    <label for="patient-name" class="form-label">Pasien</label>
+                    <label for="patient_id" class="form-label">Pasien</label>
                     <select type="text" class="form-control" id="patient_id" name="patient_id">
                         <option value="">- Pasien -</option>
                         @foreach ($patientid as $patientopt)
@@ -27,7 +27,7 @@
                     </select>
                 </div>
                 <div class="mb-2">
-                    <label for="doctor-name" class="form-label">Dokter</label>
+                    <label for="doctor_id" class="form-label">Dokter</label>
                     <select type="text" class="form-control" id="doctor_id" name="doctor_id">
                         <option value="">- Dokter -</option>
                         @foreach ($doctorid as $doctoropt)
@@ -36,7 +36,7 @@
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="health-condition" class="form-label">Kondisi Kesehatan Pasien</label>
+                    <label for="health_cond" class="form-label">Kondisi Kesehatan Pasien</label>
                     <textarea class="form-control" id="health_cond" rows="3" name="health_cond"></textarea>
                 </div>
                 <div class="mb-2">
