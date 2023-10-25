@@ -23,7 +23,16 @@
                     <th class="text-center" scope="col">Suhu Tubuh</th>
                 </tr </thead>
             <tbody>
-
+                <!-- Loop untuk setiap catatan, variabel $records berasal dari RecordController -->
+                @foreach($records as $note)
+                <tr>
+                    <th scope="row">{{$note->id}}</th>
+                    <td>{{$note->patientfunc->nama}}</td> <!-- patientfunc->nama, patientfunc merupakan nama fungsi di model Record.php, nama merupakan nama field dari tabel patients di DB-->
+                    <td>{{$note->doctorfunc->nama}}</td> <!-- doctorfunc->nama, doctorfunc merupakan nama fungsi di model Record.php, nama merupakan nama field dari tabel doctors di DB-->
+                    <td>{{$note->health_cond}}</td>
+                    <td>{{$note->temperature}}</td>
+                </tr>
+                @endforeach
             </tbody>
         </table>
     </div>
