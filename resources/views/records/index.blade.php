@@ -12,7 +12,21 @@
 
 <body>
     <h1>Rekam Medis</h1>
+    <div>
+        <table class="table table-bordered mx-auto align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Pasien</th>
+                    <th scope="col">Dokter</th>
+                    <th class="text-center" scope="col">Kondisi Kesehatan</th>
+                    <th class="text-center" scope="col">Suhu Tubuh</th>
+                </tr </thead>
+            <tbody>
 
+            </tbody>
+        </table>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
