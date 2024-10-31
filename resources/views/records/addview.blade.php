@@ -17,6 +17,8 @@
         @method('post')
         <div class="row justify-content-center">
             <div class="col-md-4">
+
+                <!-- drop down nama pasien -->
                 <div class="mb-2">
                     <label for="patient_id" class="form-label">Pasien</label>
                     <select type="text" class="form-control" id="patient_id" name="patient_id">
@@ -26,6 +28,8 @@
                         @endforeach
                     </select>
                 </div>
+
+                <!-- drop down nama dokter -->
                 <div class="mb-2">
                     <label for="doctor_id" class="form-label">Dokter</label>
                     <select type="text" class="form-control" id="doctor_id" name="doctor_id">
@@ -35,10 +39,14 @@
                         @endforeach
                     </select>
                 </div>
+
+                <!-- text area keluhan pasien -->
                 <div class="mb-3">
                     <label for="health_cond" class="form-label">Kondisi Kesehatan Pasien</label>
                     <textarea class="form-control" id="health_cond" rows="3" name="health_cond"></textarea>
                 </div>
+
+                <!-- field isian suhu pasien -->
                 <div class="mb-2">
                     <label for="temperature" class="form-label">Suhu Tubuh</label>
                     <input type="number" class="form-control" id="temperature" name="temperature">
