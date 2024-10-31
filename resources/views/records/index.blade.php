@@ -22,6 +22,7 @@
     <div>
         <table class="table table-bordered mx-auto align-middle">
             <thead class="table-dark">
+                <!-- header table rekam medis -->
                 <tr>
                     <th scope="col">ID</th>
                     <th scope="col">Pasien</th>
