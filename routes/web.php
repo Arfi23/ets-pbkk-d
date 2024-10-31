@@ -30,3 +30,6 @@ Route::post('/record', [RecordController::class, 'add'])->name('record.add');
 
 // Route untuk menampilkan halaman edit record
 Route::get('/record/{record}/editview', [RecordController::class, 'editview'])->name('record.editview');
+
+// Route untuk melakukan update terhadap data rekaman
+Route::put('/record/{record}/update', [RecordController::class, 'update'])->name('record.update');

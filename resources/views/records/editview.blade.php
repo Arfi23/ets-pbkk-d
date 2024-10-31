@@ -19,7 +19,7 @@
                     <label for="patient_id" class="form-label">Pasien</label>
                     <select type="text" class="form-control" id="patient_id" name="patient_id">
                         <option value="">- Pasien -</option>
-                        @foreach ($pastientid as $patientopt)
+                        @foreach ($patientid as $patientopt)
                         <option value="{{$patientopt->id}}" {{ $patientopt->id == $record->patient_id ? 'selected' : '' }}>{{$patientopt->nama}}</option>
                         @endforeach
                     </select>
